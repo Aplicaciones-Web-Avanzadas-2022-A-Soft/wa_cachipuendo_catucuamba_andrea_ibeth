@@ -1,0 +1,1 @@
+[{"id":"1","nombre":"Pablo","apellido":"Santos","edad":34,"genero":"masculino","nombreArtistico":"romeo santos","cancion":[{"idCancion":"2","nombre":"sobredosis"}],"tipo":"artista"},{"id":"2","nombre":"sobredosis","autor":"romeo santos","genero":"bachata","anio":2021,"clasificacion":5,"idArtista":1,"tipo":"cancion"}]
