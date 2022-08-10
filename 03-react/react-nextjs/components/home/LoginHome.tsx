@@ -1,18 +1,18 @@
 import styles from './login-home.module.css';
 import styled from '@emotion/styled';
-type LoginPropiertiesType = {
-    propiedadesImagen: {
-        width: number;
-        height: number;
+type LoginPropertiesType = {
+    propiedadesImagen:{
+        width: number,
+        height: number,
         urlImagen: string;
     };
 }
-interface LoginProperties {
+interface LoginProperties{
     color: string;
     backgroundColor: string;
-    propiedadesImagen: {
-        width: number;
-        height: number;
+    propiedadesImagen:{
+        width: number,
+        height: number,
         urlImagen: string;
     };
 }
@@ -35,6 +35,7 @@ const Subtitulo = styled.h2`
 `
 
 
+
 const LoginHome = (props: LoginProperties) => {
     const misEstilos = {
         color: props.color,
@@ -43,22 +44,15 @@ const LoginHome = (props: LoginProperties) => {
     };
     return (
         <>
-            <Titulo>Hola titulo</Titulo>
-            <TituloRojo>Hola titulo rojo</TituloRojo>
-            <Subtitulo>Hola subtitulo</Subtitulo>
-
-            {/*<h1 style={{*/}
-            {/*    color: props.color,*/}
-            {/*    backgroundColor: props.backgroundColor,}}>*/}
-            {/*    Login home*/}
-            {/*</h1>*/}
+            <Titulo>Hola Título</Titulo>
+            <TituloRojo>Hola Título Rojo</TituloRojo>
+            <Subtitulo>Hola subtítulo</Subtitulo>
             <h1 style={misEstilos}>Login home</h1>
             <h2 className={styles.azul}>AZUL</h2>
             <h2 className={styles.rojo}>ROJO</h2>
             <img src={props.propiedadesImagen.urlImagen}
                  width={props.propiedadesImagen.width}
-                 height={props.propiedadesImagen.height}
-                 alt=""/>
+                 height={props.propiedadesImagen.height}/>
         </>
     )
 }
